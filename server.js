@@ -7,8 +7,6 @@ var port = 8080;
 var app = express();
 
 app.get('/', function(req, res) {
-    console.log(req);
-    
     var ipAddress = ip.address();
     var language = req.headers["accept-language"];
     var software = os.platform();
